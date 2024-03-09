@@ -634,3 +634,44 @@ p {
     right: 100px;
     bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    #persoBox {
+        position: static;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: perspective(1000px) rotateY(0deg);
+        margin-top: 20px;
+    }
+
+    #arsenalBox {
+        display: none;
+    }
+
+    .arsenalTxtBox {
+        display: none;
+    }
+
+    #stuffBox {
+        transform: perspective(1000px) rotateY(0deg);
+        height: 60%;
+        left: 30px;
+        bottom: 20px;
+        top: auto;
+    }
+
+    .titresItems {
+        height: 5%;
+    }
+
+    .listItems {
+        height: 15%;
+        width: 90%;
+    }
+
+    .listItems Img {
+        height: 100%;
+        width: 100%;
+    }
+}
