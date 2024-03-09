@@ -645,6 +645,10 @@ p {
         margin-top: 20px;
     }
 
+    #champName {
+        font-size: 150%;
+    }
+
     #arsenalBox {
         display: none;
     }
@@ -655,10 +659,11 @@ p {
 
     #stuffBox {
         transform: perspective(1000px) rotateY(0deg);
+        position: static;
         height: 60%;
-        left: 30px;
-        bottom: 20px;
-        top: auto;
+        width: 65%;
+        margin-left: 20px;
+        margin-top: 30px;
     }
 
     .titresItems {
@@ -666,7 +671,7 @@ p {
     }
 
     .listItems {
-        height: 15%;
+        height: auto;
         width: 90%;
     }
 
