@@ -1,0 +1,636 @@
+@font-face {
+    font-family: "ror2";
+    src: url("../fonts/Bombardier-Regular.ttf");
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*Page d'index */
+
+#bodyIndex {
+    background-image: url("../img/titleWallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logoIndex {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+}
+
+#profil {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-family: ror2;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(10, 10, 10);
+    padding: 5px 25px;
+    border: 3px solid white;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 140px;
+    left: 100px;
+    gap: 3px;
+    width: 300px;
+    font-family: ror2;
+}
+
+.rowMenu {
+    color: white;
+    font-size: 20px;
+    background-color: #425261;
+    padding: 8px;
+    border: 2px solid #85909e;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px -4px #606c76 inset;
+    text-shadow: 2px 1px 1px black;
+}
+
+.rowMenu:hover {
+    background-color: rgba(178, 181, 124, 0.7);
+}
+
+/* Pages solo */
+
+.bodySolo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fonds */
+
+#bodyCommando {
+    background-image: url("../img/commando.jpg");
+}
+
+#bodyHuntress {
+    background-image: url("../img/huntress.jpg");
+}
+
+#bodyBandit {
+    background-image: url("../img/bandit.jpg");
+}
+
+#bodyPoly {
+    background-image: url("../img/poly.jpg");
+}
+
+#bodyEngineer {
+    background-image: url("../img/engineer.jpg");
+}
+
+#bodyArtificer {
+    background-image: url("../img/artificer.jpg");
+}
+
+#bodyMercenary {
+    background-image: url("../img/mercenary.jpg");
+}
+
+#bodyRex {
+    background-image: url("../img/rex.jpg");
+}
+
+#bodyLoader {
+    background-image: url("../img/loader.jpg");
+}
+
+#bodyAcrid {
+    background-image: url("../img/acrid.jpg");
+}
+
+#bodyCaptain {
+    background-image: url("../img/captain.jpg");
+}
+
+#bodyRailgunner {
+    background-image: url("../img/railgunner.jpg");
+}
+
+#bodyVoidFiend {
+    background-image: url("../img/voidfiend.jpg");
+}
+
+/* Debut personnages */
+
+#persoBox {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 630px;
+    height: 85%;
+    left: 100px;
+    top: 40px;
+    transform: perspective(1000px) rotateY(10deg);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 3px solid #3b444d;
+    overflow: hidden;
+}
+
+#personnages {
+    display: grid;
+    position: relative;
+    padding: 8px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    border: 3px solid rgba(30, 30, 30);
+    gap: 14px;
+}
+
+.champSelect {
+    height: 100%;
+    width: 100%;
+    background-color: #2e2626;
+}
+
+.champSelect img {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #706e6e;
+}
+
+.champSelect img:hover {
+    background-color: #7b7543;
+    outline: 3px solid #fff;
+}
+
+#select {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    outline: 2px solid #e7da84;
+    outline-offset: 6px;
+}
+
+#squareSelect {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #fcffc4;
+    bottom: -10px;
+    rotate: 45deg;
+    outline: 2px solid #fcffc4;
+    outline-offset: 1px;
+    border: 1px solid black
+}
+
+.othersBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1e1e;
+    outline: 3px solid #1f1e1e;
+}
+
+.others {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #181717;
+}
+
+#champName {
+    display: flex;
+    justify-content: center;
+    font-family: ror2;
+    margin: 10px 0;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+#arsenalBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 13px;
+    width: 95%;
+    margin: 0 20px;
+}
+
+.arsenalMenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: ror2;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    height: 35px;
+}
+
+.arsenalMenu:hover {
+    filter: brightness(1.2);
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+.arsenalMenu:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 2px solid rgb(200, 200, 200);
+}
+
+.arsenalMenu:focus {
+    outline: 2px solid rgb(224, 224, 224);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.arsenalMenu:focus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.8);
+    outline: 3px solid rgb(176, 176, 176);
+    outline-offset: 5px;
+}
+
+.arsenalMenuTxt {
+    position: absolute;
+    z-index: 1;
+}
+
+.arsenalTxtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 59%;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.arsenalCase {
+    display: flex;
+    height: 19.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.arsenalTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #cfd0cf;
+    font-family: ror2;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.arsenalTxtBox img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+#empty {
+    background-color: rgba(50, 50, 50, 0.1);
+    backdrop-filter: blur(1px);
+    outline: 2px solid rgba(110, 110, 110, 0.1);
+    outline-offset: -2px;
+}
+
+.titreComp {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.txtComp {
+    margin-bottom: 12px;
+    letter-spacing: 0px;
+}
+
+.titreCompCommando {
+    color: #f09816;
+}
+
+.colorCommando {
+    background-color: #ca7d01;
+    outline: 2px solid #fec467;
+}
+
+.titreCompHuntress {
+    color: #dc3f3f;
+}
+
+.colorHuntress {
+    background-color: #b22c2c;
+    outline: 2px solid #bc7b7b;
+}
+
+.titreCompBandit {
+    color: #ec8cee;
+}
+
+.colorBandit {
+    background-color: #c374c5;
+    outline: 2px solid #ec91ef;
+}
+
+.titreCompPoly {
+    color: #d4c54f;
+}
+
+.colorPoly {
+    background-color: #b2a43f;
+    outline: 2px solid #d4c350;
+}
+
+.titreCompEngineer {
+    color: #5fe286;
+}
+
+.colorEngineer {
+    background-color: #4dbf70;
+    outline: 2px solid #6ce08e;
+}
+
+.titreCompArtificer {
+    color: #f9c2ff;
+}
+
+.colorArtificer {
+    background-color: #d0a2d6;
+    outline: 2px solid #ecb8f2;
+}
+
+.titreCompMercenary {
+    color: #6cd1ea;
+}
+
+.colorMercenary {
+    background-color: #59b0c5;
+    outline: 2px solid #6ad0e9;
+}
+
+.titreCompRex {
+    color: #869e55;
+}
+
+.colorRex {
+    background-color: #708546;
+    outline: 2px solid #859e55;
+}
+
+.titreCompLoader {
+    color: #6a72e2;
+}
+
+.colorLoader {
+    background-color: #535ebb;
+    outline: 2px solid #8d91b9;
+}
+
+.titreCompAcrid {
+    color: #ccf54e;
+}
+
+.colorAcrid {
+    background-color: #a9cb3f;
+    outline: 2px solid #cbeb70;
+}
+
+.titreCompCaptain {
+    color: #c0bc93;
+}
+
+.colorCaptain {
+    background-color: #9f9c7b;
+    outline: 2px solid #c0bfa0;
+}
+
+.titreCompRailgunner {
+    color: #ed164d;
+}
+
+.colorRailgunner {
+    background-color: #c7003f;
+    outline: 2px solid #b98188;
+}
+
+.titreCompVoidFiend {
+    color: #be16f3;
+}
+
+.colorVoidFiend {
+    background-color: #9a00c7;
+    outline: 2px solid #838582;
+}
+
+.orange {
+    color: #efd267;
+}
+
+.darkOrange {
+    color: #e28060;
+}
+
+.bleu {
+    color: #91c7df;
+}
+
+.rouge {
+    color: #ef8866;
+}
+
+.vert {
+    color: #a5f368;
+}
+
+.rose {
+    color: #f583d4;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font21 {
+    font-size: 21px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font19 {
+    font-size : 19px;
+}
+
+.font18 {
+    font-size : 18px;
+}
+
+.font17 {
+    font-size : 17px;
+}
+
+.font16 {
+    font-size : 16px;
+}
+
+.font15 {
+    font-size : 15px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+/* Fin commando */
+
+/* Debut items */
+
+#stuffBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding-top: 1px;
+    right: 100px;
+    top: 40px;
+    height: 77%;
+    width: 317px;
+    border: 3px solid #3b444d;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateY(-10deg);
+    gap: 2px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.titresItems {
+    display: flex;
+    border-radius: 2px;
+    color: #fff;
+    font-family: ror2;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 90%;
+    border: 2px solid white;
+}
+
+.listItems {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: left;
+    height: 108px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #b4bbba;
+    backdrop-filter: blur(5px);
+}
+
+.items {
+    height: 52px;
+    width: 56px;
+    border: 1px solid black;
+}
+
+.items img {
+    height: 100%;
+    width: 100%;
+}
+
+#commun {
+    background-color: #b4bbba;
+    border: 3px solid #f5fffe;
+}
+
+#peuCommun {
+    background-color: #214a11;
+    border: 3px solid #9cff75;
+}
+
+#legend {
+    background-color: #bc4134;
+    border: 3px solid #ffa398;
+}
+
+#boss {
+    background-color: #a7b32f;
+    border: 3px solid #f8ffb0;
+}
+
+/* Fin Items */
+
+.button {
+    font-family: ror2;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    padding: 7px 70px;
+    border: 3px solid white;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+     1px 1px 0 #000000;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #1a1a1c;
+    border: 3px solid #323232;
+    outline: 4px solid white;
+    outline-offset: 3px;
+    text-shadow: 2px 1px 1px black;
+}
+
+#retour {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}

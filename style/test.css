@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "ror2";
+    src: url("../fonts/Bombardier-Regular.ttf");
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Page d'index */
+
+#bodyIndex {
+    background-image: url("../img/titleWallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logoIndex {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+}
+
+#profil {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-family: ror2;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(10, 10, 10);
+    padding: 5px 25px;
+    border: 3px solid white;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 140px;
+    left: 100px;
+    gap: 3px;
+    width: 300px;
+    font-family: ror2;
+}
+
+.rowMenu {
+    color: white;
+    font-size: 20px;
+    background-color: #425261;
+    padding: 8px;
+    border: 2px solid #85909e;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px -4px #606c76 inset;
+    text-shadow: 2px 1px 1px black;
+}
+
+.rowMenu:hover {
+    background-color: rgba(178, 181, 124, 0.7);
+}
+
+/* Pages solo */
+
+.bodySolo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fonds */
+
+#bodyCommando {
+    background-image: url("../img/commando.jpg");
+}
+
+#bodyHuntress {
+    background-image: url("../img/huntress.jpg");
+}
+
+/* Debut personnages */
+
+#persoBox {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 630px;
+    height: 77%;
+    left: 100px;
+    top: 40px;
+    transform: perspective(1000px) rotateY(10deg);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 3px solid #3b444d;
+    overflow: hidden;
+}
+
+#personnages {
+    display: grid;
+    position: relative;
+    padding: px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    height: 20%;
+    width: 100%;
+    outline: 3px solid rgba(30, 30, 30);
+    gap: 0px;
+}
+
+.champSelect {
+    height: 100%;
+    width: 100%;
+    background-color: #2e2626;
+}
+
+.champSelect img {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #706e6e;
+}
+
+.champSelect img:hover {
+    background-color: #7b7543;
+    outline: 3px solid #fff;
+}
+
+#select {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    outline: 2px solid #e7da84;
+    outline-offset: 6px;
+}
+
+#squareSelect {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #fcffc4;
+    bottom: -10px;
+    rotate: 45deg;
+    outline: 2px solid #fcffc4;
+    outline-offset: 1px;
+    border: 1px solid black
+}
+
+#champName {
+    display: flex;
+    justify-content: center;
+    font-family: ror2;
+    margin: 10px 0;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+#arsenalBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 13px;
+    width: 95%;
+    margin: 0 20px;
+}
+
+.arsenalMenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: ror2;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    background-color: #ca7d01;
+    outline: 2px solid #fec467;
+    font-size: 25px;
+    height: 35px;
+}
+
+.arsenalMenu:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 150, 150, 0.5);
+    outline: 2px solid rgb(200, 200, 200);
+}
+
+.arsenalMenu:focus {
+    outline: 2px solid rgb(188, 188, 188);
+}
+
+.arsenalMenu:focus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.4);
+    outline: 3px solid rgb(176, 176, 176);
+    outline-offset: 5px;
+}
+
+.arsenalMenuTxt {
+    position: absolute;
+    z-index: 1;
+}
+
+.arsenalTxtBox {
+    height: 55%;
+    width: 95%;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: blur(2px);
+}
+
+/* Fin commando */
+
+/* Debut items */
+
+#stuffBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding-top: 1px;
+    right: 100px;
+    top: 40px;
+    height: 77%;
+    width: 317px;
+    border: 3px solid #3b444d;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateY(-10deg);
+    gap: 2px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.titresItems {
+    display: flex;
+    border-radius: 2px;
+    color: #fff;
+    font-family: ror2;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 90%;
+    border: 2px solid white;
+}
+
+.listItems {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: left;
+    height: 108px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #b4bbba;
+    backdrop-filter: blur(5px);
+}
+
+.items {
+    height: 52px;
+    width: 56px;
+    border: 1px solid black;
+}
+
+.items img {
+    height: 100%;
+    width: 100%;
+}
+
+#commun {
+    background-color: #b4bbba;
+    border: 3px solid #f5fffe;
+}
+
+#peuCommun {
+    background-color: #214a11;
+    border: 3px solid #9cff75;
+}
+
+#legend {
+    background-color: #bc4134;
+    border: 3px solid #ffa398;
+}
+
+#boss {
+    background-color: #a7b32f;
+    border: 3px solid #f8ffb0;
+}
+
+/* Fin Items */
+
+.button {
+    font-family: ror2;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    padding: 7px 70px;
+    border: 3px solid white;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+     1px 1px 0 #000000;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #1a1a1c;
+    border: 3px solid #323232;
+    outline: 4px solid white;
+    outline-offset: 3px;
+    text-shadow: 2px 1px 1px black;
+}
+
+#retour {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}

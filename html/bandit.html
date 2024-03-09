@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>ROR2 Bandit</title>
+</head>
+<body class="bodySolo" id="bodyBandit">
+    <main>
+        <section>
+            <div id="persoBox">
+                <div id="personnages">
+                    <a href="commando.html" class="champSelect">
+                        <img src="../img/personnages/Commando.webp" alt="">
+                    </a>
+                    <a href="huntress.html" class="champSelect">
+                        <img src="../img/personnages/Huntress.webp" alt="">
+                    </a>
+                    <a href="bandit.html" class="champSelect" id="select">
+                        <img src="../img/personnages/Bandit.webp" alt="">
+                        <div id="squareSelect"></div>
+                    </a>
+                    <a href="poly.html" class="champSelect">
+                        <img src="../img/personnages/MUL-T.webp" alt="">
+                    </a>
+                    <a href="engineer.html" class="champSelect">
+                        <img src="../img/personnages/Engineer.webp" alt="">
+                    </a>
+                    <a href="artificer.html" class="champSelect">
+                        <img src="../img/personnages/Artificer.webp" alt="">
+                    </a>
+                    <a href="mercenary.html" class="champSelect">
+                        <img src="../img/personnages/Mercenary.webp" alt="">
+                    </a>
+                    <a href="rex.html" class="champSelect">
+                        <img src="../img/personnages/REX.webp" alt="">
+                    </a>
+                    <a href="loader.html" class="champSelect">
+                        <img src="../img/personnages/Loader.webp" alt="">
+                    </a>
+                    <a href="acrid.html" class="champSelect">
+                        <img src="../img/personnages/Acrid.webp" alt="">
+                    </a>
+                    <a href="captain.html" class="champSelect">
+                        <img src="../img/personnages/Captain.webp" alt="">
+                    </a>
+                    <a href="railgunner.html" class="champSelect">
+                        <img src="../img/personnages/Railgunner.webp" alt="">
+                    </a>
+                    <a href="void_fiend.html" class="champSelect">
+                        <img src="../img/personnages/Void_Fiend.webp" alt="">
+                    </a>
+                    <div class="othersBox">
+                        <div class="others"></div>
+                    </div>
+                    <div class="othersBox">
+                        <div class="others"></div>
+                    </div>
+                    <div class="othersBox">
+                        <div class="others"></div>
+                    </div>
+                </div>
+                <div id="champName">
+                    <h1>Bandit</h1>
+                </div>
+                <div id="arsenalBox">
+                    <a href="#" class="arsenalMenu colorBandit"><span class="arsenalMenuTxt">Aperçu</span></a>
+                    <a href="#" class="arsenalMenu colorBandit"><span class="arsenalMenuTxt">Compétences</span></a>
+                    <a href="#" class="arsenalMenu colorBandit"><span class="arsenalMenuTxt">Arsenal</span></a>
+                </div>
+                <div class="arsenalTxtBox">
+                    <div class="arsenalCase">
+                        <img src="../img/competences/bandit/Backstab.webp" alt="">
+                        <div class="arsenalTxt">
+                            <h2 class="titreComp"><span class="titreCompBandit">Attaque sournoise</span></h2>
+                            <p class="txtComp font21">Toutes les attaques <span class="orange">par-derrière</span> sont des <span class="orange">coups critiques</span>.</p>
+                        </div>
+                    </div>
+                    <div class="arsenalCase">
+                        <img src="../img/competences/bandit/Burst.webp" alt="">
+                        <div class="arsenalTxt">
+                            <h2 class="titreComp"><span class="titreCompBandit">Mitraille</span></h2>
+                            <p class="txtComp font20">Tire une mitraille de fusil à pompe infligeant <span class="orange">5x100 % de dégâts</span>. Peut contenir 4 cartouches.</p>
+                        </div>
+                    </div>
+                    <div class="arsenalCase">
+                        <img src="../img/competences/bandit/Serrated_Shiv.webp" alt="">
+                        <div class="arsenalTxt">
+                            <h2 class="titreComp"><span class="titreCompBandit">Surin dentelé</span></h2>
+                            <p class="txtComp font20">Lance une lame cachée infligeant <span class="orange">240 % de dégâts</span>. Les coups critiques causent aussi de l'<span class="rouge">Hémoragie</span>.</p>
+                        </div>
+                    </div>
+                    <div class="arsenalCase">
+                        <img src="../img/competences/bandit/Smoke_Bomb.webp" alt="">
+                        <div class="arsenalTxt">
+                            <h2 class="titreComp"><span class="titreCompBandit">Bombe fumigène</span></h2>
+                            <p class="txtComp font19"><span class="orange">Étourdissant</span>. Inflige <span class="orange">200 % de dégâts</span>, permet de devenir <span class="bleu">invisible</span>, puis inflige <span class="orange"> 200 % de dégâts</span> à nouveau.</p>
+                        </div>
+                    </div>
+                    <div class="arsenalCase">
+                        <img src="../img/competences/bandit/Desperado.webp" alt="">
+                        <div class="arsenalTxt">
+                            <h2 class="titreComp"><span class="titreCompBandit">Desperado</span></h2>
+                            <p class="txtComp font16"><span class="orange">Meurtrier</span>. Effectue un tir de revolver infligeant <span class="orange">600 % de dégâts</span>. Les éliminations offrent des <span class="orange">jetons cumulables</span> pour <span class="orange">10 %</span> de dégâts supplémentaires avec Desperado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="stuffBox">
+                <div class="titresItems" id="commun">Commun</div>
+                <div class="listItems">
+                    <img src="../img/items/goat.webp" alt="" class="items">
+                    <img src="../img/items/Crowbar.webp" alt="" class="items">
+                    <img src="../img/items/Backup_Magazine.webp" alt="" class="items">
+                    <img src="../img/items/Lens-Maker-Glasses.webp" alt="" class="items">
+                    <img src="../img/items/energyDrink.webp" alt="" class="items">
+                </div>
+                <div class="titresItems" id="peuCommun">Peu Commun</div>
+                <div class="listItems">
+                    <img src="../img/items/WaxQuail.webp" alt="" class="items">
+                    <img src="../img/items/feather.webp" alt="" class="items">
+                    <img src="../img/items/bandolier.webp" alt="" class="items">
+                    <img src="../img/items/KjarosBand.webp" alt="" class="items">
+                    <img src="../img/items/RunaldsBand.webp" alt="" class="items">
+                    <img src="../img/items/hunterHarpoon.jpg" alt="" class="items">
+                    <img src="../img/items/ukulele.webp" alt="" class="items">
+                    <img src="../img/items/whisper.webp" alt="" class="items">
+                </div>
+                <div class="titresItems" id="legend">Légendaire</div>
+                <div class="listItems">
+                    <img src="../img/items/57LeafClover.webp" alt="" class="items">
+                    <img src="../img/items/Brainstalks.webp" alt="" class="items">
+                    <img src="../img/items/whiteBear.webp" alt="" class="items">
+                </div>
+                <div class="titresItems" id="boss">Boss</div>
+                <div class="listItems">
+                    <img src="../img/items/Shatterspleen.webp" alt="" class="items">
+                </div>
+            </div>
+        </section>
+        <a href="../index.html" class="button" id="retour">Retour</a>
+    </main>
+</body>
+</html>
