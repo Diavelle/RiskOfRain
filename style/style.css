@@ -673,6 +673,7 @@ p {
     .listItems {
         height: auto;
         width: 90%;
+        gap: 2px;
     }
 
     .listItems Img {
