@@ -680,4 +680,22 @@ p {
         height: 100%;
         width: 100%;
     }
+
+    #retour {
+        display: none;
+    }
+
+    #retourFleche {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        right: 20px;
+        padding: 1%;
+        bottom: 10%;
+    }
+
+    #retourFleche img {
+        height: 100%;
+        width: 100%;
+    }
 }
