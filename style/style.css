@@ -635,6 +635,10 @@ p {
     bottom: 50px;
 }
 
+#retourFleche {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     #persoBox {
         position: static;
