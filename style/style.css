@@ -81,10 +81,13 @@ p {
 }
 
 .rowMenu:hover {
-    background-color: rgba(178, 181, 124, 0.7);
+    background-color: rgba(199, 202, 138, 0.8);
+    outline: 3px solid white;
+    outline-offset: 3px;
+    z-index: 1;
 }
 
-/* Pages solo */
+/* Pages Personnages */
 
 .bodySolo {
     background-position: center;
@@ -526,9 +529,9 @@ p {
     font-size: 14px;
 }
 
-/* Fin commando */
+/* Fin Personnages */
 
-/* Debut items */
+/* Debut stuff */
 
 #stuffBox {
     display: flex;
@@ -603,7 +606,7 @@ p {
     border: 3px solid #f8ffb0;
 }
 
-/* Fin Items */
+/* Fin stuff */
 
 .button {
     font-family: ror2;
@@ -638,6 +641,64 @@ p {
 #retourFleche {
     display: none;
 }
+
+/* Debut items */
+
+#bodyItems {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#journal {
+    height: 10%;
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+    font-family: ror2;
+    font-size: 4em;
+}
+
+#titre {
+    margin: 1% 5%;
+    font-family: ror2;
+    font-size: 30px;
+    color: white;
+}
+
+#itemsBox {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin: 0 5%;
+}
+
+#itemsContainer {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    padding: 2%;
+    border: 3px solid #1d2834;
+}
+
+#itemsContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+#detailsItem {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #1d2834;
+    color: white;
+}
+
+/* Fin items */
+
+/* Responsive */
 
 @media screen and (max-width: 768px) {
     #persoBox {
