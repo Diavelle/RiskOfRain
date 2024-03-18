@@ -710,12 +710,27 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
     min-width: 20%;
     color: white;
     outline: 2px solid #3b444d;
     outline-offset: 10px;
     font-family: ror2;
-    font-size: 1.5em;
+    width: 25%;
+}
+
+#detailItem h3 {
+    font-size: 2vw;
+}
+
+#detailTxt {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    padding: 10% 0;
+    gap: 10px;
+    text-align: left;
 }
 
 .buttonItem {
